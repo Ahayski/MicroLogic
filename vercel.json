@@ -1,18 +1,8 @@
 {
-    "version": 2,
-    "builds": [
-        {
-            "src": "src/main.jsx",
-            "use": "@vercel/node"
-        }
-    ],
     "routes": [
         {
-            "src": "/(.*)",
-            "dest": "/src/main.jsx"
+            "src": "/[^.]+",
+            "dest": "/"
         }
-    ],
-    "env": {
-        "EXAMPLE_ENV_VAR": "example-value"
-    }
+    ]
 }
