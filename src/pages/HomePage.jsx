@@ -1,4 +1,5 @@
 import { CardGroup, Card, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const HomePage = () => {
     return (
@@ -6,7 +7,7 @@ const HomePage = () => {
             <div className='m-5'>
                 <CardGroup className='flex gap-3 '>
                     <Card>
-                        <Card.Img variant="top" src="../src/assets/img/Count-duration.png" alt="Count Duration" />
+                        <Card.Img variant="top" src="/images/Count-duration.png" alt="Count Duration" />
                         <Card.Body>
                             <Card.Title>Count Duration</Card.Title>
                             <Card.Text>
@@ -14,7 +15,9 @@ const HomePage = () => {
                             </Card.Text>
                         </Card.Body>
                         <Card.Footer>
-                            <Button href="/count-duration" variant="primary">Start Game</Button>
+                            <Link to="/count-duration">
+                                <Button variant="primary">Start Game</Button>
+                            </Link>
                         </Card.Footer>
                     </Card>
                     <Card>
