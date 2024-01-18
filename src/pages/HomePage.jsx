@@ -6,7 +6,7 @@ const HomePage = () => {
         <>
             <div className='m-5'>
                 <CardGroup className='flex gap-3 '>
-                    <Card>
+                    <Card style={{ boxShadow: '0 4px 8px rgba(0,0,0,1.1)' }}>
                         <Card.Img variant="top" src="/images/Count-duration.png" alt="Count Duration" />
                         <Card.Body>
                             <Card.Title>Count Duration</Card.Title>
@@ -20,31 +20,32 @@ const HomePage = () => {
                             </Link>
                         </Card.Footer>
                     </Card>
-                    <Card>
-                        <Card.Img variant="top" src="holder.js/100px160" />
+                    <Card style={{ boxShadow: '0 4px 8px rgba(0,0,0,1.1)' }}>
+                        <Card.Img variant="top" src="/images/currency.jpg" alt="Currency Convert" />
                         <Card.Body>
                             <Card.Title>Currency Convert</Card.Title>
                             <Card.Text>
-                                This card has supporting text below as a natural lead-in to
-                                additional content.{' '}
+                                This game is a game about currency conversion
                             </Card.Text>
                         </Card.Body>
                         <Card.Footer>
-                            <Button variant="primary">Start Game</Button>
+                            <Link to="/currency-convert">
+                                <Button variant="primary">Start Game</Button>
+                            </Link>
                         </Card.Footer>
                     </Card>
-                    <Card>
-                        <Card.Img variant="top" src="holder.js/100px160" />
+                    <Card style={{ boxShadow: '0 4px 8px rgba(0,0,0,1.1)' }}>
+                        <Card.Img variant="top" src="/images/ml.jpg" alt="Mobile Legend" />
                         <Card.Body>
                             <Card.Title>Mobile Legend</Card.Title>
                             <Card.Text>
-                                This is a wider card with supporting text below as a natural lead-in
-                                to additional content. This card has even longer content than the
-                                first to show that equal height action.
+                                This game is a search for information about heroes in the Mobile Legends game
                             </Card.Text>
                         </Card.Body>
                         <Card.Footer>
-                            <Button variant="primary">Start Game</Button>
+                            <Link to="/mobile-legend">
+                                <Button variant="primary">Start Game</Button>
+                            </Link>
                         </Card.Footer>
                     </Card>
                 </CardGroup>
